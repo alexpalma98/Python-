@@ -5,3 +5,7 @@ texto = ''' por que es hermoso ser joven? ¿Por que el sueño de la juventud per
 #La siguiente función retorna una lista de las palabras del mensaje y otras cuyos valores son los número de veces
 #de cada palabra se repite en el texto.
 #Convierte todas las palabras a minúsculas (Ignore la diferencia entre mayúsculas y minúsculas)
+
+def contar_ocurrencias(mensaje):
+  mensaje.lower()
+  lista=mensaje.split(" ")
