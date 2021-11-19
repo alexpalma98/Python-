@@ -1,0 +1,32 @@
+#FUNCIÓN OPTIMA
+
+x="hola"
+reverso=x[::-1]
+
+
+#FUNCION REVERTIR STRING CON FOR
+def invertirStringFor(string): #HOLA
+  inversa = ""
+  for i in range(1,len(string)+1): #1,2,3,4
+    inversa=inversa+string[len(string)-i] #string[3]=A
+  return inversa
+
+
+#FUNCIÓN REVERTIR STRING CON WHILE
+def invertirStringWhile(string):#HOLA
+  long= len(string) #4
+  inversa= "" #--
+  while long>0: #4>0
+    inversa=inversa+string[long-1] #STRING[3]=A
+    long=long-1
+  return inversa
+
+#FUNCIÓN REVERTIR STRING CON WHILE NOT
+def invertir_stringsWhileNot(strings):
+  n=len(strings)
+  inversa = ''
+  i=n-1
+  while not(i<0):
+    inversa = inversa+strings[i] #CGC
+    i=i-1
+  return inversa
